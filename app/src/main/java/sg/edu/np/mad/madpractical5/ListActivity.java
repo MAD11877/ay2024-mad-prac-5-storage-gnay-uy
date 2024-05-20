@@ -1,9 +1,6 @@
 package sg.edu.np.mad.madpractical5;
 
 import android.os.Bundle;
-import android.app.AlertDialog;
-import android.content.Intent;
-import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,10 +11,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.io.ObjectInputStream;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 
 public class ListActivity extends AppCompatActivity {
     public static ArrayList<User> userList;
@@ -39,7 +33,7 @@ public class ListActivity extends AppCompatActivity {
 //            userList.add(user);
 //        }
 
-        DatabaseHelper db = new DatabaseHelper(this);
+        DatabaseHandler db = new DatabaseHandler(this);
         userList = db.getUsers();
 
 

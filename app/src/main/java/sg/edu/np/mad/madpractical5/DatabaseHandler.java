@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class DatabaseHelper extends SQLiteOpenHelper {
+public class DatabaseHandler extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "userDatabase";
     private static final int DATABASE_VERSION = 1;
@@ -28,7 +28,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     COLUMN_DESCRIPTION + " TEXT, " +
                     COLUMN_FOLLOWED + " INTEGER" + ")";
 
-    public DatabaseHelper(Context context) {
+    public DatabaseHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 

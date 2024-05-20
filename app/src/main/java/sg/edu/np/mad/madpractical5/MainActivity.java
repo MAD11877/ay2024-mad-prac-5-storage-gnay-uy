@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         desc.setText(user.description);
 
         Random random = new Random();
-        DatabaseHelper db = new DatabaseHelper(this);
+        DatabaseHandler db = new DatabaseHandler(this);
 
         User finalUser = user;
         findViewById(R.id.Button1).setOnClickListener(v -> {
